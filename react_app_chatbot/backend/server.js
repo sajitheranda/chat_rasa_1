@@ -93,7 +93,6 @@ app.post('/login',(req,res)=>{
                         const username=data[0].username;
                         //console.log(username)
                         //process.env.TOKEN_KEY
-                        //env key
                         console.log("TOKEN_KEY:", process.env.TOKEN_KEY);
 
                         const token=jwt.sign({'username': username},process.env.TOKEN_KEY,{expiresIn:'1d'});
