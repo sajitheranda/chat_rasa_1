@@ -1,0 +1,6 @@
+const crypto = require('crypto');
+
+const keyLengthBytes = 100; // 256 bits
+const jwtKey = crypto.randomBytes(keyLengthBytes).toString('hex');
+
+console.log('JWT Key:', jwtKey);
